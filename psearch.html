@@ -8,26 +8,23 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Home page</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link text-white" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Psearch</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pdetails</a>
+              <a class="nav-link text-white" href="psearch.html">Psearch</a>
             </li>
           </ul>
         </div>
       </nav>
-      <div class="container d-flex justify-content-center">
+      <div class="container d-flex justify-content-center mt-3">
         <select id="chooseOne" class="custom-select w-25 mr-3">
            <option>Select one</option> 
            <option>Search by category</option>
@@ -37,15 +34,16 @@
            <option>Select category</option>
         </select>
       </div>
-      <div id="categoryTable" class="table table-striped" style="display: none;">
+      <div id="categoryTable" class="table table-striped mt-3 container" style="display: none;">
           <table>
-            <thead>
+            <thead id="tableHead" class="bg-info text-white">
               <td>Id</td>
               <td>Name</td>
               <td>Price</td>
-              <td>Description</td>
+              <td>Supplier</td>
+              <td style="display: none;" id="linkData">Link</td>
             </thead>
-            <tbody>
+            <tbody class="text-white">
 
             </tbody>
           </table>
